@@ -11,7 +11,7 @@ void returnbDoublePointer(int **ptr)
 {
     std::cout << "no convert: " << **ptr << std::endl;
     int b = 200;
-    **ptr = b; // 포인터를 다른 주소로 변경
+    **ptr = b; // 해당 주소에 값을 변경
 }
 
 int main()
@@ -25,7 +25,7 @@ int main()
     std::cout << std::endl;
     int b = 100;
     int *pointer = &b;                         // lvalue <- lvalue
-    int **doublePointer = &pointer;            // lvalue <- lvalue 포인터 변수의 주소값 변수에 할당된 주소 값이 아니다. **doublePointer는 b의값이다. *doublePointer는 pointer 즉, &b이며 **doublePointer는 b이다.
+    int **doublePointer = &pointer;            // lvalue <- lvalue 포인터 변수의 주소값 변수에 할당된 주소 값이 아니다. **doublePointer는 b의 값이다. *doublePointer는 pointer 즉, &b이며 **doublePointer는 b이다.
     std::cout << **doublePointer << std::endl; // 100 출력
     returnbDoublePointer(doublePointer);
     std::cout << **doublePointer << std::endl; // 200 출력
