@@ -14,7 +14,8 @@ public:
     MyString(const char *input)
     {
 
-        length = sizeof(input);
+        length = strlen(input);
+
         size = 2;
         if (size > length)
         {
