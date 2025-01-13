@@ -1,6 +1,6 @@
 #include <iostream>
 
-void modifyPointer(int *&ptr) // cpp03은  NULL =0 이다. cpp11부터 nullptr이 될 수 없다. 런타임오류가 발생이 된다.
+void modifyPointer(int *&ptr) // cpp03은  NULL =0 이다. cpp11부터 nullptr이 될 수 없다. 런타임오류가 발생이 된다. 즉, 포인터변수의 참조값을 가져온다.즉 해당 원본 포인터 변수에 할당된 메모리의 값을 변경 할수 있는것이다.
 {
     int b = 20;
     std::cout << "no convert: " << *ptr << std::endl;
