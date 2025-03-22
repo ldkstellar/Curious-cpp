@@ -1,0 +1,14 @@
+# .vscode 디렉토리 무시
+.vscode/
+
+# *.dSYM 무시
+*.dSYM
+*.out
+# 모든 파일을 무시
+
+
+# 예외 처리: .cpp 파일 추적
+
+# .gitignore는 추적
+.DS_Store
+!.gitignore
