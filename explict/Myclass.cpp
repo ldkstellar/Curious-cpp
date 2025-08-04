@@ -14,6 +14,6 @@ void func(Yourclass obj) {}
 int main(int argc, char const *argv[]) {
   func(
       10);  // 암시적으로 컴파일러가 자동으로 생성자를 호출해 타입을 변환해준다.
-  func(Yourclass(10));
+  func(Yourclass(10));  // explict 선언하면 암시적 변환을 방지 한다.
   return 0;
 }
